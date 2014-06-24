@@ -1,11 +1,80 @@
 <html>
 <head>
-	<title>Exercise 1</title>
+	<title>Exercise 3</title>
 </head>
 <body>
 	<div class="header">header</div>
-	<div class="side-bar">side-bar</div>
-	<div class="content">content</div>
+	<div class="content">
+		<div>
+			<div class="widget">widget</div>
+			<div class="widget">widget</div>
+			<div class="widget blue">widget blue</div>
+			<div class="gadget">gadget</div>
+			<div class="widget blue">widget blue</div>
+		</div>
+		<div>
+			<div class="widget">widget</div>
+			<div class="gadget blue">gadget blue</div>
+			<div class="widget">widget</div>
+			<div class="gadget">gadget</div>
+			<div class="widget">widget</div>
+		</div>
+	</div>
 	<div class="footer">footer</div>
 </body>
 </html>
+
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+div {
+	color: white;
+	font-size: 16px;
+	font-family: Helvetica;
+	padding: 1em;
+	margin: 0 auto;
+}
+.header {
+	background: #ff8f85;
+	height: 3em;
+}
+.content {
+	background: #ff0059;
+	display: inline-block;
+	width: 100%;
+	height: 20em;
+}
+.content .widget {
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	background: #b1a1c6;
+}
+.content .gadget {
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	background: #8d75b0;
+	border-radius: 10px;
+}
+
+.widget.blue {
+	background: #0b8db3;
+}
+
+.gadget.blue {
+	background: #003366;
+}
+
+.footer {
+	background: #00b3b3;
+}
+
+</style>
